@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>register</title>
+  <link rel="stylesheet" href="../My styles/Register.css">
+  <script src="../Script files/Register.js"></script>
+</head>
+<body>
+    <h1 class="reg">Register now</h1>
+    <form action="">
+      <fieldset>
+      <input type="text" name="name" id="name" placeholder="first name" required>
+      <input type="text" name="name" id="name" placeholder="last name" required><br><br>
+      <input type="email" name="name" id="name" placeholder="@gmail.com">
+      <input type="number" name="name" id="name" placeholder="+234 0000000000"><br><br>
+      <input type="password" name="class" id="class" placeholder="Password"><br>
+      <input type="password" name="class" id="class" placeholder="confirm password">
+      </fieldset><br>
+      <fieldset>
+        <div class="lebel">
+          <form id="location-form">
+            <select id="nationality" onchange="updateStates()">
+              <option value="">Select Nationality</option>
+              <option value="Nigeria">Nigeria</option>
+            </select><br><br>
+            <select id="state" onchange="updateLocalGovernments()">
+              <option value="">Select State</option>
+            </select><br><br>
+            <select id="local-government">
+              <option value="">Select Local Government</option>
+            </select>
+          </form>
+        </div>
+       </fieldset>
+       <fieldset class="fieldset">
+         <label for="">gender</label>
+         <input type="radio" name="male" id="male">male 
+         <input type="radio" name="male" id="male">female
+       </fieldset>
+</body>
+</html>

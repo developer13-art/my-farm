@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(brown, orange, white, pink);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .reg {
+    text-align: center;
+    padding-top: 15px;
+    color: aqua;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    opacity: 0;
+    animation-name: reg;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes reg {
+    0% {
+      opacity: 1;
+    }
+    
+    50% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  fieldset {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    background: whitesmoke;
+    border-radius: 15px;
+    border: none;
+  }
+  
+  form {
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 15px;
+    background: floralwhite;
+    height: 400px;
+    width: 95%;
+  }
+  
+  form #name {
+    width: 150px;
+    height: 40px;
+    padding-left: 10px;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  form #class {
+    display: block;
+    margin: auto;
+    width: 305px;
+    padding-left: 10px;
+    font-style: italic;
+    font-weight: 800;
+    height: 40px;
+  }
+  
+  .lebel label {
+    display: inline;
+    padding-bottom: 10px;
+  }
+  
+  .lebel select {
+    height: 35px;
+  }
+  
+  .fieldset {
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    
+  }
+}
